@@ -28,17 +28,17 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0px 1.0875rem 1.45rem`,
+          margin: ` auto`,
+          maxWidth: 1080,
+          padding: `0px 0.0875rem 0.45rem`,
           paddingTop: 0,
         }}
       >
-        <main>{children}</main>
+        <main style={{textAlign:"center"}}>{children}</main>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org">Titiloxx</a>
         </footer>
       </div>
     </>
