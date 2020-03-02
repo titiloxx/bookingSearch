@@ -93,6 +93,13 @@ const IndexPage = () => {
               rows.filter(x=>parseInt(x.price)>parseInt(filter.value)),
     filterAll: true// String-based value accessors!
       },
+    {
+    Header: 'Reputacion',
+    accessor: 'reputacion',
+    filterMethod: (filter, rows) =>
+              rows.filter(x=>parseInt(x.price)>parseInt(filter.value)),
+    filterAll: true// String-based value accessors!
+      },
       {
     Header: 'Link',
     accessor: 'link',
