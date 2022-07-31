@@ -112,7 +112,10 @@ const IndexPage = () => {
     <Col xs={3}><h2>Fecha</h2></Col>
     <Col xs={3}><DayPickerInput  dayPickerProps={{
             disabledDays: { before: new Date() }
-          }} onDayChange={day => setFecha(day)} /></Col>
+          }} onDayChange={day => 
+          //date to YYYY-MM-DD using native date object
+          setFecha(moment(day).format("YYYY-MM-DD"))
+          }/></Col>
     </Row>
      <br/>
     <Row>
